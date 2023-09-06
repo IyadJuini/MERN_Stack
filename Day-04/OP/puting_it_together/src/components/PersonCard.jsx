@@ -14,7 +14,10 @@ class PersonCard extends Component {
     }
     render() {
         return (
-            <div>PersonCard
+            <div className='App'>
+                <fieldset>
+                    <legend>🔥🔥🔥🔥🔥personCrd🔥🔥🔥🔥🔥</legend>
+                    <>
                 <h1>{this.props.firstName} {this.props.lastName}</h1>
                 <p>Age: {this.state.age}</p>
                 <p>Hair color: {this.props.hairColor}</p>
@@ -22,6 +25,8 @@ class PersonCard extends Component {
                     Birthday button for {this.props.firstName}{""}
                     {this.props.lastName}
                 </button>
+            </>
+                </fieldset>
             </div>
             );
     }
