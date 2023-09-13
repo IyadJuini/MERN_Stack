@@ -12,7 +12,7 @@
 
 * ___npm run dev
 
-* ___npm install react-bootstrap bootstrap
+* ___npm install react-bootstrap bootstrap (in case you want to use bootstrap)
 
 
 ********* 👾👾👾 SERVER 👾👾👾 ********
