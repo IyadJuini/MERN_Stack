@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import MyForm from './components/MyForm'
 import ShowBox from './components/ShowBox'
+import './App.css'
 
 function App() {
   const [colors, setColors] = useState([])
