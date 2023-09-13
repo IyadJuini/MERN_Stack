@@ -2,16 +2,33 @@
 
 ********* 👾👾👾 REACT 👾👾👾  *********
 
-npm create vite@latest
-npm install
-npm install react-router-dom
-npm install axios
-npm install react-bootstrap bootstrap
+* ___npm create vite@latest
+
+* ___cd client/
+
+* ___npm install
+
+* ___npm install react-router-dom axios
+
+* ___npm run dev
+
+* ___npm install react-bootstrap bootstrap
 
 
 ********* 👾👾👾 SERVER 👾👾👾 ********
 
-touch server.js
-npm init -y
-npm install express mongoose
-npm i cors
+* ___mkdir server
+
+* ___cd server/
+
+* ___mkdir config controllers models routes
+
+* ___touch server.js
+
+* ___touch .gitignore
+
+* ___npm init -y
+
+* ___npm install express mongoose
+
+* ___npm install cors
