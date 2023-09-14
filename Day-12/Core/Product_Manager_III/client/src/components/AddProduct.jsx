@@ -13,27 +13,27 @@ const AddProduct = (props) => {
     }
     return (
         <fieldset>
-            <legend>👾👾👾AddProduct👾👾👾</legend>
+            <legend><h1>👾____AddProduct____👾</h1></legend>
             {/* <h4>
                 PERSON FROM STATE {JSON.stringify(product)}
             </h4> */}
             <form onSubmit={formHandler}>
 
-                <p>
+                <h4>
                 Title: <input type="text" 
                 onChange={(e) => setProduct({...product, title: e.target.value})}
                 value={product.title}/>
-                </p>
+                </h4>
                 
-                <p>Price : <input type="number"
+                <h4>Price : <input type="number"
                 onChange={(e) => setProduct({ ...product, price: e.target.value })}
                 value={product.price}
-                /></p>
+                /></h4>
 
-                <p>Description : <input type="text-area"
+                <h4>Description : <input type="text-area"
                     onChange={(e) => setProduct({ ...product, description: e.target.value })}
                     value={product.description}
-                /></p>
+                /></h4>
 
                 <button>Submit</button>
             </form>

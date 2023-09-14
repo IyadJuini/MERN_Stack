@@ -1,10 +1,10 @@
 const express = require("express");
-const app = express();
 const cors = require('cors')
+const app = express();
 
 // GLOBAL VARIABLES
 const PORT = 8000;
-const DB = "notes_app_db";
+const DB = "notesApp_db";
 
 
 app.use(express.json(), express.urlencoded({ extended: true }), cors());

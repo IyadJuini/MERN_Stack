@@ -1,26 +1,31 @@
 import React from 'react'
 import noteStyle from './Note.module.css'
+import { Link } from 'react-router-dom'
 
-const Note = (props) => {
-    return (
-        <div className={noteStyle.Note} > 
-            <div>👽👽👽__Note Title__👽👽👽</div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium minus officia iusto nesciunt provident eos ducimus commodi.
-                Asperiores cupiditate itaque officia fugiat natus porro voluptates ducimus eaque distinctio, beatae ipsam!
-            </p>
-        <div className='d-flex justify-content-between'>
-            <p>
-                2021-11-09
-            </p>
-            <div className='btn btn-success'>
-            <button>Edit</button>
-            <button>Delete</button>
-            </div>
+const Note = ({ note, deleteNote }) => {
+  // console.log(props);
+  return (
+    <div className={noteStyle.note}>
+      <Link className='fst-italic text-dark h1' to={`/notes/${note._id}`} style={{textDecoration:"none"}}>{note.isImportant && "📌"} {note.title}</Link>
+      {/* <h1>{note.isImportant ? "📌":""} {note.title}</h1> */}
+      <p className='fs-4'>
+        {note.content}
+      </p>
+      <div className='d-flex justify-content-between align-items-center'>
+        <p>{note.createdAt}</p>
+        <div>
+          <Link
+            to={`/notes/${note._id}/edit`}
+            className='btn btn-info mx-2'
+            style={{ width: "100px", height: "40px" }} >
+            Edit</Link>
+          <button className={noteStyle.button_delete} 
+          onClick={() => deleteNote(note._id)}
+          >Delete</button>
         </div>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Note

@@ -25,7 +25,7 @@ const Show = (props) => {
             <Link to={`/products/${product._id}/edit`} >Edit</Link>
         </button>
         
-        // Your other paths in the app.js Routes component are here.
+        
 
 
     </div>
